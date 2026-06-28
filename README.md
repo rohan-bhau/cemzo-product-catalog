@@ -1,16 +1,79 @@
-# React + Vite
+# CEMZO Product Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A responsive React product catalog built for the CEMZO React Developer Intern
+technical assignment. It fetches products from Fake Store API and supports
+search, category filtering, product details modal, loading/error states,
+pagination, and dark/light theme.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Live Demo
+- Live URL: https://cemzo-product-catalog-zeta.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## GitHub Repository
+- Repository: https://github.com/rohan-bhau/cemzo-product-catalog
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Features
+- Product listing with image, title, price, category, and rating
+- Search by product name
+- Category filter dropdown
+- Product details modal
+- Loading skeleton and error state
+- Responsive layout for mobile, tablet, and desktop
+- Debounced search
+- Pagination
+- Dark/light theme
+
+
+## Tech Stack
+- React
+- Vite
+- JavaScript
+- CSS
+- Fake Store API
+
+
+## Folder Structure
+```txt
+src/
+├── components/
+├── context/
+├── hooks/
+├── services/
+├── utils/
+├── App.css
+├── App.jsx
+└── main.jsx
+```
+
+
+## Run Locally
+```bash
+git clone https://github.com/rohan-bhau/cemzo-product-catalog.git
+cd cemzo-product-catalog
+npm install
+npm run dev
+```
+
+
+## Build
+```bash
+npm run build
+```
+
+
+## API Used
+https://fakestoreapi.com/products
+
+
+## Known Limitations
+- Fake Store API is used as a demo API.
+- Product data is not editable because the assignment only requires listing,
+  search, filtering, and details.
+- No backend database is used.
+
+
+## Author
+MD Rohan Mia
